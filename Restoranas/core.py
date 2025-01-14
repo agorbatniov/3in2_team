@@ -1,5 +1,8 @@
 ﻿from collections import deque
 
+print('Hello')
+
+
 # Banko operacijų klasė
 class BankTransactions:
     def __init__(self):
