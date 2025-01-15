@@ -1,7 +1,7 @@
 ﻿from collections import deque
 
 print('Hello')
-print('Hello from Timofej')
+print('Hello from Vika')
 
 # Banko operacijų klasė
 class BankTransactions:
@@ -79,3 +79,4 @@ bt.add_rear_transaction("Client 1")
 bt.add_front_transaction("VIP Client")
 print("Dekle aptarnaujamas iš priekio:", bt.remove_front_transaction())  # VIP Client
 print("Dekle aptarnaujamas iš galo:", bt.remove_rear_transaction())  # Client 1
+#Atnaujintas tekstas
