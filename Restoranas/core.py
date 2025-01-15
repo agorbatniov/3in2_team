@@ -1,7 +1,7 @@
 ﻿from collections import deque
 
 print('Hello')
-
+print('Hello from Timofej')
 
 # Banko operacijų klasė
 class BankTransactions:
