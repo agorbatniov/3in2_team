@@ -3,72 +3,73 @@ from collections import deque
 print("Welcome to Michail's restaurant")
 print('Hello from Vika')
 print('Hello from Ilja')
+print('Hello from Jevgenij')
 
-# Banko operacijø klasë
+# Banko operacijÃ¸ klasÃ«
 class BankTransactions:
     def __init__(self):
-        self.queue = deque()  # Naudojame kaip eilæ
-        self.stack = deque()  # Naudojame kaip stekà
-        self.deque = deque()  # Naudojame kaip deklà
+        self.queue = deque()  # Naudojame kaip eilÃ¦
+        self.stack = deque()  # Naudojame kaip stekÃ 
+        self.deque = deque()  # Naudojame kaip deklÃ 
     
-    # Eilës funkcijos
+    # EilÃ«s funkcijos
     def enqueue_transaction(self, transaction):
-        # TODO: ádëti elementà á eilæ
+        # TODO: Ã¡dÃ«ti elementÃ  Ã¡ eilÃ¦
         # self.queue.
-        print(f"[Elementas {transaction} ádëtas á eilæ]")
+        print(f"[Elementas {transaction} Ã¡dÃ«tas Ã¡ eilÃ¦]")
     
     def dequeue_transaction(self):
         if self.queue:
-            print("[Gauname elementà iğ eilës]")
-            # TODO: paimti pirmà elementà iğ eilës
+            print("[Gauname elementÃ  iÃ° eilÃ«s]")
+            # TODO: paimti pirmÃ  elementÃ  iÃ° eilÃ«s
             # return self.queue
         return None
     
     # Steko funkcijos
     def push_transaction(self, transaction):
-        # TODO: ádëti elementà á stekà
+        # TODO: Ã¡dÃ«ti elementÃ  Ã¡ stekÃ 
         # self.stack.
-        print(f"[Elementas {transaction} ádëtas á stekà]")
+        print(f"[Elementas {transaction} Ã¡dÃ«tas Ã¡ stekÃ ]")
     
     def pop_transaction(self):
         if self.stack:
-            print("[Gauname elementà iğ steko]")
-            # TODO: paimti paskutiná elementà iğ steko
+            print("[Gauname elementÃ  iÃ° steko]")
+            # TODO: paimti paskutinÃ¡ elementÃ  iÃ° steko
             # return self.stack.
         return None
     
     # Deklo funkcijos
     def add_front_transaction(self, transaction):
-        # TODO: ádëti elementà á prieká
+        # TODO: Ã¡dÃ«ti elementÃ  Ã¡ priekÃ¡
         # self.deque.
-        print(f"[Elementas {transaction} ádëtas á deklo galà]")
+        print(f"[Elementas {transaction} Ã¡dÃ«tas Ã¡ deklo galÃ ]")
     
     def add_rear_transaction(self, transaction):
-        # TODO: ádëti elementà á prieká
+        # TODO: Ã¡dÃ«ti elementÃ  Ã¡ priekÃ¡
         # self.deque.
-        print(f"[Elementas {transaction} ádëtas á deklo prieká]")
+        print(f"[Elementas {transaction} Ã¡dÃ«tas Ã¡ deklo priekÃ¡]")
     
     def remove_front_transaction(self):
         if self.deque:
-            print("[Gauname elementà iğ deklo iğ priekio]")
-            # TODO: paimti pirmà elementà iğ deklo
+            print("[Gauname elementÃ  iÃ° deklo iÃ° priekio]")
+            # TODO: paimti pirmÃ  elementÃ  iÃ° deklo
             # return self.deque.
         return None
     
     def remove_rear_transaction(self):
         if self.deque:
-            print("[Gauname elementà iğ deklo iğ galo]")
-            # TODO: paimti paskutiná elementà iğ deklo
+            print("[Gauname elementÃ  iÃ° deklo iÃ° galo]")
+            # TODO: paimti paskutinÃ¡ elementÃ  iÃ° deklo
             # return self.deque.
         return None
 
 # Pavyzdys
 bt = BankTransactions()
 
-# Eilës operacijos
+# EilÃ«s operacijos
 bt.enqueue_transaction("Client 1")
 bt.enqueue_transaction("Client 2")
-print("Eilëje aptarnaujamas:", bt.dequeue_transaction())  # Client 1
+print("EilÃ«je aptarnaujamas:", bt.dequeue_transaction())  # Client 1
 
 # Steko operacijos
 bt.push_transaction("Client 1")
@@ -78,6 +79,7 @@ print("Steke aptarnaujamas:", bt.pop_transaction())  # Client 2
 # Deklo operacijos
 bt.add_rear_transaction("Client 1")
 bt.add_front_transaction("VIP Client")
-print("Dekle aptarnaujamas iğ priekio:", bt.remove_front_transaction())  # VIP Client
-print("Dekle aptarnaujamas iğ galo:", bt.remove_rear_transaction())  # Client 1
+print("Dekle aptarnaujamas iÃ° priekio:", bt.remove_front_transaction())  # VIP Client
+print("Dekle aptarnaujamas iÃ° galo:", bt.remove_rear_transaction())  # Client 1
 #Atnaujintas tekstas
+# hi
