@@ -1,73 +1,74 @@
-ï»¿from collections import deque
+from collections import deque
 
 print('Hello')
 print('Hello from Vika')
+print('Hello from Ilja')
 
-# Banko operacijÅ³ klasÄ—
+# Banko operacijø klasë
 class BankTransactions:
     def __init__(self):
-        self.queue = deque()  # Naudojame kaip eilÄ™
-        self.stack = deque()  # Naudojame kaip stekÄ…
-        self.deque = deque()  # Naudojame kaip deklÄ…
+        self.queue = deque()  # Naudojame kaip eilæ
+        self.stack = deque()  # Naudojame kaip stekà
+        self.deque = deque()  # Naudojame kaip deklà
     
-    # EilÄ—s funkcijos
+    # Eilës funkcijos
     def enqueue_transaction(self, transaction):
-        # TODO: Ä¯dÄ—ti elementÄ… Ä¯ eilÄ™
+        # TODO: ádëti elementà á eilæ
         # self.queue.
-        print(f"[Elementas {transaction} Ä¯dÄ—tas Ä¯ eilÄ™]")
+        print(f"[Elementas {transaction} ádëtas á eilæ]")
     
     def dequeue_transaction(self):
         if self.queue:
-            print("[Gauname elementÄ… iÅ¡ eilÄ—s]")
-            # TODO: paimti pirmÄ… elementÄ… iÅ¡ eilÄ—s
+            print("[Gauname elementà iğ eilës]")
+            # TODO: paimti pirmà elementà iğ eilës
             # return self.queue
         return None
     
     # Steko funkcijos
     def push_transaction(self, transaction):
-        # TODO: Ä¯dÄ—ti elementÄ… Ä¯ stekÄ…
+        # TODO: ádëti elementà á stekà
         # self.stack.
-        print(f"[Elementas {transaction} Ä¯dÄ—tas Ä¯ stekÄ…]")
+        print(f"[Elementas {transaction} ádëtas á stekà]")
     
     def pop_transaction(self):
         if self.stack:
-            print("[Gauname elementÄ… iÅ¡ steko]")
-            # TODO: paimti paskutinÄ¯ elementÄ… iÅ¡ steko
+            print("[Gauname elementà iğ steko]")
+            # TODO: paimti paskutiná elementà iğ steko
             # return self.stack.
         return None
     
     # Deklo funkcijos
     def add_front_transaction(self, transaction):
-        # TODO: Ä¯dÄ—ti elementÄ… Ä¯ priekÄ¯
+        # TODO: ádëti elementà á prieká
         # self.deque.
-        print(f"[Elementas {transaction} Ä¯dÄ—tas Ä¯ deklo galÄ…]")
+        print(f"[Elementas {transaction} ádëtas á deklo galà]")
     
     def add_rear_transaction(self, transaction):
-        # TODO: Ä¯dÄ—ti elementÄ… Ä¯ priekÄ¯
+        # TODO: ádëti elementà á prieká
         # self.deque.
-        print(f"[Elementas {transaction} Ä¯dÄ—tas Ä¯ deklo priekÄ¯]")
+        print(f"[Elementas {transaction} ádëtas á deklo prieká]")
     
     def remove_front_transaction(self):
         if self.deque:
-            print("[Gauname elementÄ… iÅ¡ deklo iÅ¡ priekio]")
-            # TODO: paimti pirmÄ… elementÄ… iÅ¡ deklo
+            print("[Gauname elementà iğ deklo iğ priekio]")
+            # TODO: paimti pirmà elementà iğ deklo
             # return self.deque.
         return None
     
     def remove_rear_transaction(self):
         if self.deque:
-            print("[Gauname elementÄ… iÅ¡ deklo iÅ¡ galo]")
-            # TODO: paimti paskutinÄ¯ elementÄ… iÅ¡ deklo
+            print("[Gauname elementà iğ deklo iğ galo]")
+            # TODO: paimti paskutiná elementà iğ deklo
             # return self.deque.
         return None
 
 # Pavyzdys
 bt = BankTransactions()
 
-# EilÄ—s operacijos
+# Eilës operacijos
 bt.enqueue_transaction("Client 1")
 bt.enqueue_transaction("Client 2")
-print("EilÄ—je aptarnaujamas:", bt.dequeue_transaction())  # Client 1
+print("Eilëje aptarnaujamas:", bt.dequeue_transaction())  # Client 1
 
 # Steko operacijos
 bt.push_transaction("Client 1")
@@ -77,6 +78,6 @@ print("Steke aptarnaujamas:", bt.pop_transaction())  # Client 2
 # Deklo operacijos
 bt.add_rear_transaction("Client 1")
 bt.add_front_transaction("VIP Client")
-print("Dekle aptarnaujamas iÅ¡ priekio:", bt.remove_front_transaction())  # VIP Client
-print("Dekle aptarnaujamas iÅ¡ galo:", bt.remove_rear_transaction())  # Client 1
+print("Dekle aptarnaujamas iğ priekio:", bt.remove_front_transaction())  # VIP Client
+print("Dekle aptarnaujamas iğ galo:", bt.remove_rear_transaction())  # Client 1
 #Atnaujintas tekstas
