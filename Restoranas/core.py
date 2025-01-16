@@ -1,6 +1,6 @@
 from collections import deque
 
-print('Hello')
+print("Welcome to Michail's restaurant")
 print('Hello from Vika')
 print('Hello from Ilja')
 
